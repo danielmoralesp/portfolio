@@ -36,7 +36,6 @@
 
 		$('#intro').backstretch([
 			'/assets/bg3.jpg',
-			'/assets/bg4.jpg',
 			'/assets/bg2.jpg'
 		], {duration: 3000, fade: 750});
 
