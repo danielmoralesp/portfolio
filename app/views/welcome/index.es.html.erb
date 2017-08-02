@@ -13,7 +13,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Daniel Morales</a>
+					<a class="navbar-brand" href="/">Daniel Morales</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -425,7 +425,9 @@
 		    <div class="row">
 
 		      <div class="col-md-6 col-md-offset-3 wow bounceInUp">
-		        <a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
+						<%= link_to asset_path('/assets/Hoja_de_Vida_Espanol_Daniel_Morales.pdf'), class: "btn btn-default btn-custom-2"  do %>
+							<i class="fa fa-cloud-download icon-before"></i> <%= t(:download_cv) %>
+						<% end %>
 		      </div>
 
 		    </div><!-- .row -->
