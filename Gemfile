@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 #font-awesome
 gem "font-awesome-rails"
+gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
