@@ -4,11 +4,7 @@ class WelcomeController < ApplicationController
   end
 
   def download_pdf_spanish
-    send_file(
-      "#{Rails.root}/public/Hoja_de_Vida_Espanol_Daniel_Morales.pdf",
-      filename: "Hoja_de_Vida_Espanol_Daniel_Morales.pdf",
-      type: "application/pdf"
-    )
+    send_file "#{Rails.root}/public/Hoja_de_Vida_Espanol_Daniel_Morales.pdf", type: "application/pdf", x_sendfile: true
   end
 
   def download_pdf_english
