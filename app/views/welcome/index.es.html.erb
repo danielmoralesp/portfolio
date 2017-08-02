@@ -26,6 +26,7 @@
 						<!--<li><a href="#resume">HV</a></li>-->
 						<li><a href="#portfolio">Portafolio</a></li>
 						<li><a href="#contact">Contacto</a></li>
+						<li><%= link_to t(:english), url_for( locale: :en ) %></li>
 					</ul>
 				</div>
 
@@ -73,26 +74,38 @@
 
 				<div class="row">
 
-					<div class="col-sm-4 wow bounceInLeft">
+					<div class="col-sm-3 wow bounceInLeft">
 						<div class="profile-item">
 							<i class="fa fa-envelope-o"></i>
 							<h5><a >danielmorales1202@gmail.com</a></h5>
 						</div>
 					</div>
 
-					<div class="col-sm-4 wow bounceInUp">
+					<div class="col-sm-3 wow bounceInUp">
 						<div class="profile-item">
 							<i class="fa fa-phone"></i>
 							<h5>(057-4) 318-5200341</h5>
 						</div>
 					</div>
 
-					<div class="col-sm-4 wow bounceInRight">
+					<div class="col-sm-3 wow bounceInRight">
 						<div class="profile-item">
 							<i class="fa fa-map-marker"></i>
-							<h5>Calle 41 a Sur # 43 A - 114, Envigado - Antioquia</h5>
+							<h5>Calle 41 a Sur # 43 A - 114, Envigado - Medellin - Colombia</h5>
 						</div>
 					</div>
+
+					<div class="col-sm-3 wow bounceInRight">
+						<div class="profile-item">
+							<i class="fa fa-globe"></i>
+							<h5>
+								Idioma: Cambiar a <%= link_to t(:english), url_for( locale: :en ) %>
+							</h5>
+						</div>
+					</div>
+
+
+
 
 				</div><!-- .row -->
 
@@ -648,13 +661,12 @@
 
 				<div class="row">
 
-					<div class="col-md-12 headline wow bounceInLeft">
+					<div class="col-md-6 headline wow bounceInLeft">
 						<h2>Contáctame</h2>
 						<p>Puedes contactarme con los siguientes datos</p>
 					</div>
 
-					<div class="col-md-6 wow bounceInUp">
-
+					<div class="col-md-6 headline wow bounceInLeft">
 						<p>Me gusta escuchar ideas radicales, nuevas, innovadoras.</p>
 
 						<ul class="icon-list">
@@ -663,6 +675,7 @@
 							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">danielmorales1202@gmail.com</a></li>
 						</ul>
 
+						<p>Cambiar idioma a: <%= link_to t(:english), url_for( locale: :en ) %></p>
 					</div>
 
 				</div><!-- .row -->
