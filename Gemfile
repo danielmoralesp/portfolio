@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #font-awesome
 gem "font-awesome-rails"
 gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+# Boostrap
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
