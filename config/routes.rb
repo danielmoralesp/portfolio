@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
     root 'welcome#index'
 
-    get 'welcome', to: 'home#welcome'
+    get 'welcome', to: 'welcome#index'
+    get "welcome/download_pdf_spanish"
+    get "welcome/download_pdf_english"
 
   end
 
