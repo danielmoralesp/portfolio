@@ -12,17 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sprockets
 //= require turbolinks
-//= require jquery.backstretch.min.js
-//= require owl.carousel.min.js
-//= require jquery.magnific-popup.min.js
-//= require jquery.simple-text-rotator.min.js
-//= require jquery.waypoints.js
-//= require jquery.countTo.js
-//= require wow.min.js
-//= require smoothscroll.js
-//= require jquery.fitvids
-//= require jqBootstrapValidation.js
-//= require custom.js
 //= require_tree .
