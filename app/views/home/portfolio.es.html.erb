@@ -1,0 +1,99 @@
+<%= render 'layouts/menu' %>
+        <div class="wrapper">
+            <!-- Hero section-->
+            <section class="split-image parallax" data-background="<%= image_path('module-9.jpg')%>">
+              <%= render 'layouts/download_pdf' %>
+            </section>
+            <!-- Hero section end-->
+            <!-- Content section-->
+            <section class="split-content">
+                <!-- Page content-->
+                <section class="module">
+                    <div class="container-fluid container-custom">
+                        <!-- Page title-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-header">
+                                    <h1>Últimos Trabajos & Proyectos.</h1>
+                                    <p>
+                                      Trabajar con equipos de desarrollo e inter-disciplinarios
+                                      , crear productos que realmente usen y disfruten las
+                                      personas es mi pasión. Construir y servir es
+                                      mi prioridad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Page title end-->
+                        <!-- Portfolio filter-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="filters" id="filters">
+                                    <li><a class="current" href="#" data-filter="*">Ver Todos</a></li>
+                                    <li><a href="#" data-filter=".makeitreal">MakeitReal</a></li>
+                                    <li><a href="#" data-filter=".helpcode">Helpcode</a></li>
+                                    <li><a href="#" data-filter=".floresymas">FloresyMas</a></li>
+                                    <li><a href="#" data-filter=".tuttores">Tuttores</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Portfolio filter end-->
+                        <!-- Portfolio-->
+                        <div class="row-portfolio">
+                            <!-- Portfolio image-->
+                            <div class="portfolio-item makeitreal">
+                              <div class="portfolio-wrapper"><img src="<%= image_path('portfolio/makeit-3.jpg')%>" alt="">
+                                  <div class="portfolio-overlay"></div>
+                                  <div class="portfolio-caption">
+                                      <h6 class="portfolio-title">MakeitReal.camp</h6><span class="portfolio-subtitle">Profesor - Mentor</span>
+                                  </div>
+                              </div>
+                              <a class="portfolio-link" href="portfolio_makeit"></a>
+                            </div>
+                            <!-- Portfolio image end-->
+                            <!-- Portfolio vimeo-->
+                            <div class="portfolio-item helpcode">
+                              <div class="portfolio-wrapper"><img src="<%= image_path('portfolio/helpcode-1.png')%>" alt="">
+                                  <div class="portfolio-overlay"></div>
+                                  <div class="portfolio-caption">
+                                      <h6 class="portfolio-title">HelpCode.co</h6><span class="portfolio-subtitle">Bugs - Mentoring</span>
+                                  </div>
+                              </div><a class="portfolio-link" href="portfolio_helpcode"></a>
+                            </div>
+                            <!-- Portfolio vimeo end-->
+                            <!-- Portfolio youtube-->
+                            <div class="portfolio-item floresymas">
+                              <div class="portfolio-wrapper"><img src="<%= image_path('portfolio/floresymas-1.png')%>" alt="">
+                                  <div class="portfolio-overlay"></div>
+                                  <div class="portfolio-caption">
+                                      <h6 class="portfolio-title">FloresyMas.com</h6><span class="portfolio-subtitle">Ecommerce - OnDemand</span>
+                                  </div>
+                              </div><a class="portfolio-link" href="portfolio_floresymas"></a>
+                            </div>
+                            <!-- Portfolio youtube end-->
+                            <!-- Portfolio single page-->
+                            <div class="portfolio-item tuttores">
+                                <div class="portfolio-wrapper"><img src="<%= image_path('portfolio/tuttores-1.png')%>" alt="">
+                                    <div class="portfolio-overlay"></div>
+                                    <div class="portfolio-caption">
+                                        <h6 class="portfolio-title">Tuttores.com</h6><span class="portfolio-subtitle">Marketplace - OnDemand</span>
+                                    </div>
+                                </div><a class="portfolio-link" href="portfolio_tuttores"></a>
+                            </div>
+                            <!-- Portfolio single end-->
+                        </div>
+                        <!-- Portfolio end-->
+                    </div>
+                </section>
+
+                <hr>
+                <div class="btn-list m-b-35">
+                  <%= link_to "<< #{t(:experience)}", resume_path, class: "btn btn-sm btn-brand"  %>
+                  <%= link_to "#{t(:contact)} >>", contact_path, class: "btn btn-sm btn-brand pull-right"  %>
+                </div>
+
+                <!-- Page content-->
+                <%= render 'layouts/footer' %>
+            </section>
+            <!-- Content section end-->
+        </div>

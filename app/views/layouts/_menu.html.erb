@@ -1,0 +1,27 @@
+<!-- Show menu-->
+<div class="show-menu-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<!-- Show menu end-->
+<!-- Menu-->
+<div class="overlay-menu">
+    <div class="menu-table">
+        <div class="menu-table-cell">
+          <ul class="navigation">
+              <li><%= link_to t(:profile), profile_path %></li>
+              <li><%= link_to t(:experience), resume_path %></li>
+              <li><%= link_to t(:portfolio), portfolio_path %></li>
+              <li><%= link_to t(:contact), contact_path %></li>
+              <li class="menu-item-has-children"><a href="/"><%= t(:idiom)%></a>
+                  <ul class="sub-menu">
+                      <li><%= link_to t(:english), url_for( locale: :en ) %></li>
+                      <li><%= link_to t(:spanish), url_for( locale: :es ) %></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+    </div>
+</div>
+<!-- Menu end-->

@@ -1,0 +1,67 @@
+<%= render 'layouts/menu' %>
+        <div class="wrapper">
+            <!-- Hero section-->
+            <section class="split-image parallax" data-background="<%= image_path('portfolio/helpcode-1.png')%>">
+                <%= render 'layouts/download_pdf' %>
+            </section>
+            <!-- Hero section end-->
+            <!-- Content section-->
+            <section class="split-content">
+                <!-- Page content-->
+                <section class="module">
+                    <div class="container-fluid container-custom">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <article class="post">
+                                    <div class="post-header">
+                                        <h1 class="post-title">CTO y Co-Fundador - HelpCode.co</h1>
+                                        <ul class="post-meta">
+                                            <li><span>2017 - Actualmente</span></li>
+                                            <!-- <li><a href="#">Profesor</a> <a href="#">Mentor</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="post-content">
+                                        <p><a href="<%= image_path('portfolio/helpcode-1.png')%>" rel="gallery"><img src="<%= image_path('portfolio/helpcode-1.png')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/helpcode-2.png')%>" rel="gallery"><img src="<%= image_path('portfolio/helpcode-2.png')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/helpcode-3.png')%>" rel="gallery"><img src="<%= image_path('portfolio/helpcode-3.png')%>" alt=""></a></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail-->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="list-unstyled">
+                                    <li>Cliente: HelpCode</li>
+                                    <li>Fecha: 2017</li>
+                                    <li>Tipo: CTO y Co-Fundador</li>
+                                    <li>Site: <a href="http://www.helpcode.co" target="_blank">www.helpcode.co</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="lead">
+                                  De Junior a Senior Developer
+                                </p>
+                                <p>
+                                  Nueva startup desarrollado con el apoyo de <a href="https://apps.co/" target="_blank">Apps.co</a> y las
+                                  mentorias de <a href="http://socialatomventures.com/" target="_blank">SocialAtom</a> . Soy el desarrollador del producto y CTO. El
+                                  emprendimiento esta enfocado en brindar mentorias por parte de programadores
+                                  senior a programadores junior. También brinda soporte para eliminar bugs
+                                  de código.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail end-->
+                    </div>
+                </section>
+
+                <hr>
+                <div class="btn-list m-b-35">
+                  <%= link_to "<< #{t(:portfolio)}", portfolio_path, class: "btn btn-sm btn-brand"  %>
+                </div>
+
+                <!-- Page content end-->
+                <%= render 'layouts/footer' %>
+            </section>
+            <!-- Content section end-->
+        </div>

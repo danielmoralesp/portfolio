@@ -1,0 +1,69 @@
+<%= render 'layouts/menu' %>
+        <div class="wrapper">
+            <!-- Hero section-->
+            <section class="split-image parallax" data-background="<%= image_path('portfolio/floresymas-1.png')%>">
+                <%= render 'layouts/download_pdf' %>
+            </section>
+            <!-- Hero section end-->
+            <!-- Content section-->
+            <section class="split-content">
+                <!-- Page content-->
+                <section class="module">
+                    <div class="container-fluid container-custom">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <article class="post">
+                                    <div class="post-header">
+                                        <h1 class="post-title">CTO & Founder – FloresyMas.com (Bogotá)</h1>
+                                        <ul class="post-meta">
+                                            <li><span>April 2013 - October 2016</span></li>
+                                            <!-- <li><a href="#">Profesor</a> <a href="#">Mentor</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="post-content">
+                                        <p><a href="<%= image_path('portfolio/floresymas-1.png')%>" rel="gallery"><img src="<%= image_path('portfolio/floresymas-1.png')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/floresymas-2.png')%>" rel="gallery"><img src="<%= image_path('portfolio/floresymas-2.png')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/floresymas-3.png')%>" rel="gallery"><img src="<%= image_path('portfolio/floresymas-3.png')%>" alt=""></a></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail-->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="list-unstyled">
+                                    <li>Client: FloresyMas</li>
+                                    <li>Date: April 2013 - October 2016</li>
+                                    <li>Type: CTO & Founder</li>
+                                    <li>Site: <a href="http://www.floresymas.com" target="_blank">www.floresymas.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="lead">
+                                  We received $350,000 USD of Venture Capital investment
+                                </p>
+                                <p>
+                                  I founded a startup call <a href="http://www.floresymas.com/" target="_blank"> FloresyMas.com </a>, which has received so far
+                                  more than $350,000 USD of investment by the Venture Capital Fund <a href="https://www.velumventures.com/" target="_blank"> Velum Ventures </a>.
+                                  I`m currently a partner, maintaining a important shareholder and being a member of the Board of Directors. The company currently
+                                  has annual sales of 1.000 million COP ($360.000 USD), and has a presence in Bogotá, Medellín, Cali and Bucaramanga. Here are some press mentions
+                                  at <a href="http://www.thetime.com/archive/document/CMS-15864275" target="_blank"> El Tiempo </a>, <a href = "http://pulsosocial.com/2014/07/30/velum-el-esperado-fondo-vc-de-medellin-anuncia-sus-tres-primeras-inversiones/ "Target =" _ blank ">
+                                  Pulso Social</a> and <a href = "https://thenextweb.com/insider/2014/09/01/august-latin-america-tech-news-shouldnt-miss-past-month/#.tnw_WeCpEfRa" >
+                                  The Nex Web </a> about <a href="http://www.floresymas.com/" target="_blank"> FloresyMas.com </a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail end-->
+                    </div>
+                </section>
+
+                <hr>
+                <div class="btn-list m-b-35">
+                  <%= link_to "<< #{t(:portfolio)}", portfolio_path, class: "btn btn-sm btn-brand"  %>
+                </div>
+
+                <!-- Page content end-->
+                <%= render 'layouts/footer' %>
+            </section>
+            <!-- Content section end-->
+        </div>

@@ -1,0 +1,67 @@
+<%= render 'layouts/menu' %>
+        <div class="wrapper">
+            <!-- Hero section-->
+            <section class="split-image parallax" data-background="<%= image_path('portfolio/makeit-3.jpg')%>">
+                <%= render 'layouts/download_pdf' %>
+            </section>
+            <!-- Hero section end-->
+            <!-- Content section-->
+            <section class="split-content">
+                <!-- Page content-->
+                <section class="module">
+                    <div class="container-fluid container-custom">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <article class="post">
+                                    <div class="post-header">
+                                        <h1 class="post-title">Profesor de Ruby on Rails - MakeitReal.camp</h1>
+                                        <ul class="post-meta">
+                                            <li><span>2017 - Actualmente</span></li>
+                                            <!-- <li><a href="#">Profesor</a> <a href="#">Mentor</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="post-content">
+                                        <p><a href="<%= image_path('portfolio/makeit-1.jpg')%>" rel="gallery"><img src="<%= image_path('portfolio/makeit-1.jpg')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/makeit-2.jpg')%>" rel="gallery"><img src="<%= image_path('portfolio/makeit-2.jpg')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/makeit-4.jpg')%>" rel="gallery"><img src="<%= image_path('portfolio/makeit-4.jpg')%>" alt=""></a></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail-->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="list-unstyled">
+                                    <li>Cliente: La Nueva Educacion SAS</li>
+                                    <li>Fecha: 2017</li>
+                                    <li>Tipo: Profesor - Mentor</li>
+                                    <li>Site: <a href="http://www.makeitreal.camp" target="_blank" >www.makeitreal.camp</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="lead">
+                                  Aprender Enseñando
+                                </p>
+                                <p>
+                                  Dicen que una de las maneras mas efectivas de aprender es enseñando. Y esto es
+                                  mas cierto aún cuando lo que enseñas te apasiona. La programación es difícil de
+                                  aprender, y mas aún es difícil de enseñar. Por esto el proceso de aprendizaje se
+                                  profundiza cuando la persona trata de transmitir sus conocimientos. Esa ha sido
+                                  mi gran experiencia como profesor y mentor de MakeitReal.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail end-->
+                    </div>
+                </section>
+
+                <hr>
+                <div class="btn-list m-b-35">
+                  <%= link_to "<< #{t(:portfolio)}", portfolio_path, class: "btn btn-sm btn-brand"  %>
+                </div>
+
+                <!-- Page content end-->
+                <%= render 'layouts/footer' %>
+            </section>
+            <!-- Content section end-->
+        </div>

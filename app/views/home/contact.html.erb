@@ -1,0 +1,66 @@
+<%= render 'layouts/menu' %>
+        <div class="wrapper">
+            <!-- Hero section-->
+            <section class="split-image parallax" data-background="<%= image_path('module-8.jpg')%>">
+              <%= render 'layouts/download_pdf' %>
+            </section>
+            <!-- Hero section end-->
+            <!-- Content section-->
+            <section class="split-content">
+                <!-- Page title-->
+                <section class="module">
+                    <div class="container-fluid container-custom">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1>Let´s talk about your project.</h1>
+                                <p>
+                                  I am currently available to discuss your project, analyze the
+                                  value i can bring, the goals i can help you achieve and the
+                                  development that we will have as professionals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page title end-->
+                <!-- MAP-->
+                <div class="maps-container">
+                    <div id="map" data-addresses="[6.1662133,-75.59204110000002]" data-info="[Daniel Morales House]" data-icon="<%= image_path('map-icon.png')%>" data-zoom="15"></div>
+                </div>
+                <!-- END MAP-->
+                <!-- Reach me-->
+                <section class="module">
+                    <div class="container-fluid container-custom">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h6>Phone:</h6>
+                                <ul>
+                                    <li>Colombia (Medellín)</li>
+                                    <li>+34 (4) 318-5200341</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6>E-mail:</h6>
+                                <ul>
+                                  <li><a>danielmorales1202@gmail.com</a></li>
+                                </ul>
+                                <h6><%= t(:download_cv) %></h6>
+                                <ul>
+                                  <li><%= link_to t(:spanish), home_download_pdf_spanish_url %></li>
+                                  <li><%= link_to t(:english), home_download_pdf_english_url %></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Reach me end-->
+                <div class="btn-list m-b-35">
+                  <%= link_to "<< #{t(:portfolio)}", portfolio_path, class: "btn btn-sm btn-brand"  %>
+                </div>
+
+                <%= render 'layouts/footer' %>
+            </section>
+            <!-- Content section end-->
+        </div>
+        <!-- Scripts-->
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>

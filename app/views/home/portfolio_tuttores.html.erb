@@ -1,0 +1,66 @@
+<%= render 'layouts/menu' %>
+        <div class="wrapper">
+            <!-- Hero section-->
+            <section class="split-image parallax" data-background="<%= image_path('portfolio/tuttores-1.png')%>">
+                <%= render 'layouts/download_pdf' %>
+            </section>
+            <!-- Hero section end-->
+            <!-- Content section-->
+            <section class="split-content">
+                <!-- Page content-->
+                <section class="module">
+                    <div class="container-fluid container-custom">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <article class="post">
+                                    <div class="post-header">
+                                        <h1 class="post-title">CTO & Co-Founder – Tuttores.com</h1>
+                                        <ul class="post-meta">
+                                            <li><span>July 2012 - March 2013</span></li>
+                                            <!-- <li><a href="#">Profesor</a> <a href="#">Mentor</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="post-content">
+                                        <p><a href="<%= image_path('portfolio/tuttores-1.png')%>" rel="gallery"><img src="<%= image_path('portfolio/tuttores-1.png')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/tuttores-2.png')%>" rel="gallery"><img src="<%= image_path('portfolio/tuttores-2.png')%>" alt=""></a></p>
+                                        <p><a href="<%= image_path('portfolio/tuttores-3.png')%>" rel="gallery"><img src="<%= image_path('portfolio/tuttores-3.png')%>" alt=""></a></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail-->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="list-unstyled">
+                                    <li>Client: Tuttores</li>
+                                    <li>Date: July 2012 - March 2013</li>
+                                    <li>Type: CTO & Co-Founder</li>
+                                    <!--<li>Site: <a href="http://www.floresymas.com">www.floresymas.com</a></li>-->
+                                </ul>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="lead">
+                                  My First Startup
+                                </p>
+                                <p>
+                                  Supported by the Sillicon Valley Startup Accelerator call <a href="https://fi.co/" target="_blank"> Founder Institute </a>,
+                                  and being the most outstanding idea in the first batch of this accelerator in Medellin, was my first startup and my
+                                  first failure. It was about one platform to connect American students with Latin teachers who they will need help with
+                                  Mathematics, Physics and Chemistry. I'm currently i find in plans to re-launch it.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Portfolio detail end-->
+                    </div>
+                </section>
+
+                <hr>
+                <div class="btn-list m-b-35">
+                  <%= link_to "<< #{t(:portfolio)}", portfolio_path, class: "btn btn-sm btn-brand"  %>
+                </div>
+
+                <!-- Page content end-->
+                <%= render 'layouts/footer' %>
+            </section>
+            <!-- Content section end-->
+        </div>
